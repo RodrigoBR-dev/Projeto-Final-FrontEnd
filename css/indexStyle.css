@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --corPri: #75604A;
+    --corBranca: #fff;
+    --baseTexto: #000;
+    --corSombra: #ECECEC;
+}
+
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+    outline:none;
+}
+
+body {
+    background: black url("../img/marte-2.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Space Mono', monospace;
+}
+
+.navbar {
+    padding-left: 10px;
+}
+
+.bg-mars {
+    background-color: #4D251B;
+}
+
+.logo {
+    width: 75px;
+    padding-left: 20px ;
+    padding-right: 20px;
+    
+
+}
+.header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.pagina {
+    padding-top: 60px;
+    padding-bottom: 75px;
+    color: var(--corBranca);
+}
+
+#inico > h1{
+    text-align: center;
+}
+
+#content a{
+    background-color: var(--corBranca);
+    display:flex;
+    position:relative;
+    font-size:16px;
+    margin:0 auto;
+    padding: 10px;
+    float:left;
+}
+
+#content span{
+    width: 94.5%;
+    padding:10px;
+    color: var(--corBranca);
+    position:absolute;
+    bottom:4%;
+    left:3%;
+    background: var(--baseTexto);
+    opacity: 0;
+    font-size: 12px;
+    transition: 0.5s;
+}
+    
+#content div:hover span {
+    opacity: 0.8;
+}
+    
+#content img{
+    width:100%;
+    height:100%;
+}
+
+#content .info {
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    align-self: flex-end;
+    background-color: rgba(255,255,255,0.3);
+    left: 15px;
+    bottom: 13px;
+}
+
+#content div:hover .info {
+    opacity: 0;
+}
+
+strong {
+    font-size: large;
+}
+
+#sobre .row {
+   margin-bottom: 20px;
+}
+
+.img-sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.img-sobre img {
+    box-shadow: 0px 0px 10px 3px var(--corSombra);
+    max-width: 150px;
+    max-height: 150px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+form {
+    margin: auto;
+    max-width: 50%;
+    padding-bottom: 45px;
+}
+
+.form-group {
+    margin: auto;
+    align-content: space-between;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 14px;
+}
+
+.teste {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-group {
+    margin-bottom: 7px;
+}
+
+@media (max-width: 1200px){
+    strong {
+        font-size: medium;
+    }
+
+    #content span {
+        width: 92%;
+        font-size: 12px;
+        bottom:6%;
+        left:4%;
+    }
+}
+
+@media (max-width: 800px){
+    strong {
+        font-size: small;
+    }
+
+    #content span {
+        width: 90%;
+        font-size: 8px;
+        bottom:7%;
+        left:5%;
+    }
+}
+
+@media (max-width: 600px){
+   #content span {
+        width: 88%;
+        bottom:8.5%;
+        left: 6%;
+    }
+
+    .pagina {
+        padding-bottom: 0;
+    }
+
+    form {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 575px){
+    #content img{
+        max-width: 496px;
+    }
+
+    strong {
+        font-size: large;
+    }
+
+    #content span {
+        width: 96%;
+        font-size: 12px;
+        bottom: 3%;
+        left: 2%;
+    }
+
+    .pagina {
+        padding-top: 180px;
+    }
+
+    form {
+        padding-bottom: 0;
+    }
+
+    .teste {
+        padding-bottom: 20px;
+    }
+}
